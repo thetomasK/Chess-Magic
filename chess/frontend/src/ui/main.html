@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chess Board</title>
+    <meta charset="UTF-8">   
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        .chess-board {
+            border-collapse: collapse;
+            margin: 20px;
+        }
+
+        .chess-board th, .chess-board td {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .light {
+            background-color: #f0d9b5;
+        }
+
+        .dark {
+            background-color: #b58863;
+        }
+
+        .piece {
+            font-size: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            cursor: grab;
+        }
+    </style>
+</head>
+<body>
+    <table class="chess-board">
+        <tbody>
+            <tr>
+                <th></th>
+                <th>a</th>
+                <th>b</th>
+                <th>c</th>
+                <th>d</th>
+                <th>e</th>
+                <th>f</th>
+                <th>g</th>
+                <th>h</th>
+            </tr>
+            <tr>
+                <th>8</th>
+                <td class="light" data-position="a8"></td>
+                <td class="dark" data-position="b8"></td>
+                <td class="light" data-position="c8"></td>
+                <td class="dark" data-position="d8"></td>
+                <td class="light" data-position="e8"></td>
+                <td class="dark" data-position="f8"></td>
+                <td class="light" data-position="g8"></td>
+                <td class="dark" data-position="h8"></td>
+            </tr>
+            <tr>
+                <th>7</th>
+                <td class="dark" data-position="a7"></td>
+                <td class="light" data-position="b7"></td>
+                <td class="dark" data-position="c7"></td>
+                <td class="light" data-position="d7"></td>
+                <td class="dark" data-position="e7"></td>
+                <td class="light" data-position="f7"></td>
+                <td class="dark" data-position="g7"></td>
+                <td class="light" data-position="h7"></td>
+            </tr>
+            <tr>
+                <th>6</th>
+                <td class="light" data-position="a6"></td>
+                <td class="dark" data-position="b6"></td>
+                <td class="light" data-position="c6"></td>
+                <td class="dark" data-position="d6"></td>
+                <td class="light" data-position="e6"></td>
+                <td class="dark" data-position="f6"></td>
+                <td class="light" data-position="g6"></td>
+                <td class="dark" data-position="h6"></td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td class="dark" data-position="a5"></td>
+                <td class="light" data-position="b5"></td>
+                <td class="dark" data-position="c5"></td>
+                <td class="light" data-position="d5"></td>
+                <td class="dark" data-position="e5"></td>
+                <td class="light" data-position="f5"></td>
+                <td class="dark" data-position="g5"></td>
+                <td class="light" data-position="h5"></td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td class="light" data-position="a4"></td>
+                <td class="dark" data-position="b4"></td>
+                <td class="light" data-position="c4"></td>
+                <td class="dark" data-position="d4"></td>
+                <td class="light" data-position="e4"></td>
+                <td class="dark" data-position="f4"></td>
+                <td class="light" data-position="g4"></td>
+                <td class="dark" data-position="h4"></td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td class="dark" data-position="a3"></td>
+                <td class="light" data-position="b3"></td>
+                <td class="dark" data-position="c3"></td>
+                <td class="light" data-position="d3"></td>
+                <td class="dark" data-position="e3"></td>
+                <td class="light" data-position="f3"></td>
+                <td class="dark" data-position="g3"></td>
+                <td class="light" data-position="h3"></td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td class="light" data-position="a2"></td>
+                <td class="dark" data-position="b2"></td>
+                <td class="light" data-position="c2"></td>
+                <td class="dark" data-position="d2"></td>
+                <td class="light" data-position="e2"></td>
+                <td class="dark" data-position="f2"></td>
+                <td class="light" data-position="g2"></td>
+                <td class="dark" data-position="h2"></td>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td class="dark" data-position="a1"></td>
+                <td class="light" data-position="b1"></td>
+                <td class="dark" data-position="c1"></td>
+                <td class="light" data-position="d1"></td>
+                <td class="dark" data-position="e1"></td>
+                <td class="light" data-position="f1"></td>
+                <td class="dark" data-position="g1"></td>
+                <td class="light" data-position="h1"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
